@@ -71,7 +71,7 @@ func NewEventDetails(detailsRaw []byte) (EventDetails, error) {
 }
 
 func (e EventDetails) ID() string {
-	return e.Payload.Get("id")
+	return e.Payload.Get(viper.GetString("rid_param"))
 }
 
 func (e EventDetails) UserAgent() string {

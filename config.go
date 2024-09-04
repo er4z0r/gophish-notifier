@@ -45,6 +45,7 @@ func init() {
 }
 
 func setDefaults() {
+	viper.SetDefault("rid_param","id")
 	viper.SetDefault("log_level", "info")
 	viper.SetDefault("slack.bot_username", "PhishBot")
 	viper.SetDefault("slack.bot_emoji", ":blowfish:")
